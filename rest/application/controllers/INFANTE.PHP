@@ -48,13 +48,20 @@ class Infante extends REST_Controller
 		array_push($arrayData, "Hola Juan");
 		array_push("Dejeme obtener su historial");
 		$collection = "SELECT * FROM infante";
-		$collection.
+
 	}
 
-	public function get_DetallePaciente() {
+	public function get_DetalleInfante() {
 		$query = $this->db->query('SELECT * FROM `infante` WHERE `Nombre`= ' );
+		$existe = $query->row();
+
+		$arrayData =[];
+		array_push($arrayData, "Hola " +  $this->input->get('Nombre', TRUE));
+		array_push("Dejeme obtener su historial");
+		for (var i = 0, len = rows.length; i < len; i++) {
+
+		}	
 	}
 
-	
 
 }
