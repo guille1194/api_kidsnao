@@ -58,8 +58,8 @@ class Infante extends REST_Controller
 		$arrayData =[];
 		array_push($arrayData, "Hola " +  $this->input->get('Nombre', TRUE));
 		array_push("Dejeme obtener su historial");
-		for (var i = 0, len = rows.length; i < len; i++) {
-
+		for ($i = 0, $len = rows.length; $i < $len; $i++) {
+			$
 		}	
 	}
 
